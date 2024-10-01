@@ -1,0 +1,8 @@
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\bin\Debug\Tutorial1.exe.config
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\bin\Debug\Tutorial1.exe
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\bin\Debug\Tutorial1.pdb
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\obj\Debug\Tutorial1-CreateWindow.csproj.AssemblyReference.cache
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\obj\Debug\Tutorial1-CreateWindow.csproj.SuggestedBindingRedirects.cache
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\obj\Debug\Tutorial1-CreateWindow.csproj.CoreCompileInputs.cache
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\obj\Debug\Tutorial1.exe
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\obj\Debug\Tutorial1.pdb
