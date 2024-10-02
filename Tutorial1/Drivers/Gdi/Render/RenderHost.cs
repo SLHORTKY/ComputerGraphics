@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tutorial1.Engine.Render;
 
 namespace Tutorial1.Drivers.Gdi.Render
 {
@@ -13,11 +14,11 @@ namespace Tutorial1.Drivers.Gdi.Render
         private BufferedGraphics bufferedGraphics { get; set; } 
         private Font curFont { get; set; }
 
-        public RenderHost(IntPtr hostHandle) : base(hostHandle)
+        public RenderHost(IRenderHostSetup setup) : base(setup)
         {
-            GraphicsHost = Graphics.FromHwnd(HostHandle);
+            GraphicsHost = Graphics.FromHwnd(setup.HostHandle);
           
-            bufferedGraphics = BufferedGraphicsManager.Current.Allocate(GraphicsHost, new Rectangle(Point.Empty, W.GetClientRectangle(hostHandle).Size ));
+            bufferedGraphics = BufferedGraphicsManager.Current.Allocate(GraphicsHost, new Rectangle(Point.Empty, W.GetClientRectangle(setup.HostHandle).Size));
 
             curFont = new Font("Consolas", 12);
         }

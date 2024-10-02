@@ -6,3 +6,8 @@ C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutoria
 C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\obj\Debug\Tutorial1-CreateWindow.csproj.CoreCompileInputs.cache
 C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\obj\Debug\Tutorial1.exe
 C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\obj\Debug\Tutorial1.pdb
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\bin\Debug\MathNet.Numerics.dll
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\bin\Debug\MathNet.Spatial.dll
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\bin\Debug\MathNet.Numerics.xml
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\bin\Debug\MathNet.Spatial.xml
+C:\Users\Salih\Documents\GitHub\C_SharpProjects\ComputerGraphicsProjects\Tutorial1\obj\Debug\Tutorial1-CreateWindow.csproj.CopyComplete

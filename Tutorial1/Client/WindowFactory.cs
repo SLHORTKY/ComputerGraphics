@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Tutorial1.Engine.Render;
+using Tutorial1.Inputs;
 using Tutorial1.Utils;
 
 namespace Tutorial1.Client
@@ -16,8 +17,8 @@ namespace Tutorial1.Client
 
             var renderHosts = new[] 
             {
-            CreateWindowForm(size, "Created Form", handle => new Drivers.Gdi.Render.RenderHost(handle)),
-            CreateWindowWpf(size, "Created wpf", handle => new  Drivers.Gdi.Render.RenderHost(handle)),
+            CreateWindowForm(size, "Created Form", rhs => new Drivers.Gdi.Render.RenderHost(rhs)),
+            CreateWindowWpf(size, "Created wpf", rhs => new  Drivers.Gdi.Render.RenderHost(rhs)),
             };
             SortWindows(renderHosts );
             return renderHosts;
@@ -41,7 +42,7 @@ namespace Tutorial1.Client
             return hostControl;
         }
 
-        private static IRenderHost CreateWindowForm(System.Drawing.Size size, string title , Func<IntPtr, IRenderHost> ctorRenderHost)
+        private static IRenderHost CreateWindowForm(System.Drawing.Size size, string title , Func<IRenderHostSetup, IRenderHost> ctorRenderHost)
         {
             var window = new System.Windows.Forms.Form
             {
@@ -69,9 +70,9 @@ namespace Tutorial1.Client
 
             window.Show();
 
-            return ctorRenderHost(hostControl.Handle());
+            return ctorRenderHost(new RenderHostSetup(hostControl.Handle(), new InputForms(hostControl)));
         }
-        private static IRenderHost CreateWindowWpf(System.Drawing.Size size, string title, Func<IntPtr, IRenderHost> ctorRenderHost)
+        private static IRenderHost CreateWindowWpf(System.Drawing.Size size, string title, Func<IRenderHostSetup, IRenderHost> ctorRenderHost)
         {
             var window = new System.Windows.Window
             {
@@ -89,7 +90,7 @@ namespace Tutorial1.Client
             window.Closed += (sender, args) => { System.Windows.Application.Current.Shutdown(); };
             window.Show();
 
-            return ctorRenderHost(hostControl.Handle());
+            return ctorRenderHost(new RenderHostSetup(hostControl.Handle(), new InputForms(hostControl)));
         }
    
         private static void SortWindows(IEnumerable<IRenderHost> renderHosts)
