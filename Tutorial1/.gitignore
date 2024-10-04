@@ -1,0 +1,66 @@
+# Build artifacts
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.app
+*.lib
+*.so
+*.dylib
+
+# User-specific files
+*.rsuser
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Mono auto generated files
+mono_crash.*
+
+# Visual Studio folder
+.vscode/
+.vs/
+.idea/
+*.code-workspace
+
+# Rider project files
+.idea/
+*.sln.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# NuGet packages
+*.nupkg
+# Uncomment if you have custom NuGet packages that you want to ignore
+# packages/
+
+# DotNet Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Files built by popular tools like JetBrains Rider and ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+.idea/
+
+# StyleCop
+StyleCopReport.xml
+
+# Uncomment if needed, generally useful for libraries
+# publish/
+
+# Git
+!.gitignore
