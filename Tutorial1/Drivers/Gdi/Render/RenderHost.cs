@@ -15,6 +15,7 @@ namespace Tutorial1.Drivers.Gdi.Render
         private BufferedGraphics BufferedGraphics { get; set; } 
         private IntPtr GraphicsHostDeviceContext { get; set; }
         private DirectBitmap BackBuffer { get; set; }
+
         private Font curFont { get; set; }
 
         public RenderHost(IRenderHostSetup setup) : base(setup)
@@ -88,8 +89,6 @@ namespace Tutorial1.Drivers.Gdi.Render
                 (byte)((double)y / BufferSize.Height * byte.MaxValue),
                 (byte)(Math.Sin(t * Math.PI) * byte.MaxValue)
             );
-
-           
 
             Parallel.For(0, BackBuffer.Buffer.Length, index =>
             {

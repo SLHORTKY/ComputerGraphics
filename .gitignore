@@ -1,0 +1,78 @@
+﻿# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Oo]bj/
+[Bb]in/
+[Oo]ut/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# CMake
+CMakeLists.txt.user
+
+# Packages
+*.nupkg
+*.snupkg
+
+# Symbol Store
+*.pdb
+
+# VS2017/19 temporary auto-generated files
+.vs/
+
+# Backup & report files from converting an old project file
+*.old
+*.orig
+*.backup
+*.report.xml
+
+# Log files
+*.log
+
+# Crash Reports
+*.crash
+
+# Other
+*.cache
+*.diff
+*.patch
+*.rej
+
+# Azure DevOps
+.packages/
+
+# DotNet specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
